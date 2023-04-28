@@ -1,10 +1,6 @@
 package challenges.animals.level3
 
-// Starter code
-// Uncomment before starting
 // Output could vary from inherent randomness
-
-/*
 fun main() {
     println(getRandomCatSound()) // meowed
     println(getRandomDogSound()) // barked
@@ -13,4 +9,19 @@ fun main() {
     makeAnimalSound("cow", "Herb") // Herb talked
     makeAnimalSound(name = "Ert") // Ert talked
 }
- */
+
+fun getRandomCatSound() = listOf("meowed", "hissed", "purred").random()
+
+fun getRandomDogSound() = listOf("barked", "growled").random()
+
+fun makeAnimalSound(animal: String = "", name: String) {
+    println(
+        "$name ${
+            when (animal) {
+                "cat" -> getRandomCatSound()
+                "dog" -> getRandomDogSound()
+                else -> "talked"
+            }
+        }"
+    )
+}
