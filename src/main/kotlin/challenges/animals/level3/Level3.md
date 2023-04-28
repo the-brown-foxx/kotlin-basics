@@ -2,18 +2,7 @@
 
 ## Level 3
 
-**Starter code**
-```kotlin
-// Output could vary from inherent randomness
-fun main() {
-    println(getRandomCatSound()) // meowed
-    println(getRandomDogSound()) // barked
-    makeAnimalSound("cat", "Me-Mow") // Me-Mow hissed
-    makeAnimalSound("dog", "Jake") // Jake growled
-    makeAnimalSound("cow", "Herb") // Herb talked
-    makeAnimalSound(name = "Ert") // Ert talked
-}
-```
+> Use the included starter code
 
 Write a function `getRandomCatSound` that will return a random cat sound in past-tense (e.g. meowed).
 
