@@ -12,7 +12,7 @@ fun main() {
         val catDog : String = readln()
 
         if(catDog != catDog.uppercase()){
-            println("Use uppercase letters only!")
+            println("Use uppercase letters only")
         }
         else{
             animalSound(name,catDog)
