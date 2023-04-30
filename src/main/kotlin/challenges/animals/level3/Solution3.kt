@@ -24,9 +24,9 @@ fun makeAnimalSound(animal : String = "", name: String = "") {
     }
 }
 
-fun getRandomDogSound() = listOf("barked", "whimpered", "Howled" ).random()
+fun getRandomDogSound() = arrayOf<String>("barked", "whimpered", "Howled" ).random()
 
-fun getRandomCatSound() = listOf("meowed", "purred", "yowled", "Hissed").random()
+fun getRandomCatSound() = arrayOf<String>("meowed", "purred", "yowled", "Hissed").random()
 
 
 
