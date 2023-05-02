@@ -18,6 +18,7 @@ class Animal(private val species : AnimalSpecies, private val name: String, priv
             println("$name is already dead")
         }
         else{
+            isAlive = false;
             println("Your ${species.name} $name died")
         }
 
