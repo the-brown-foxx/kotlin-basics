@@ -45,7 +45,11 @@
 - Data classes
 - Enum classes
 - Sealed classes
+- Extension functions
 
 **Level 6: Higher-Order Functions**
 - Passing functions as arguments for other functions
 - Lambdas
+
+**Level 7: Android**
+- Download Android Studio after you're done with Level 6
