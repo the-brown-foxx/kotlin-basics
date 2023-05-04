@@ -5,9 +5,9 @@ import kotlin.random.Random
 fun main() {
     // Test coinFlip
     var heads = 0
-    val flips = 1_000_000
+    val flips = 2_000_000_000
     repeat(flips) {
-        if (coinFlip(headsProbability = 0.3f) == CoinFace.Heads) heads++
+        if (coinFlip(headsProbability = 1f) == CoinFace.Heads) heads++
     }
 
     println(heads.toDouble() / flips.toDouble())
@@ -31,7 +31,7 @@ enum class CoinFace { Heads, Tails }
 fun coinFlip(headsProbability: Float = 1f): CoinFace {
     val actualHeadsProbability = if (headsProbability < 0) 0f else if (headsProbability > 1) 1f else headsProbability
     val randomFloat = Random.nextDouble(0.0, 1.0).toFloat()
-    return if (actualHeadsProbability == 1f || randomFloat < actualHeadsProbability) CoinFace.Heads else CoinFace.Tails
+    return if (randomFloat <= actualHeadsProbability) CoinFace.Heads else CoinFace.Tails
 }
 
 fun List<Animal>.cull(predicate: (Animal) -> Boolean) {
