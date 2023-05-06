@@ -1,7 +1,5 @@
 package challenges.animals.level6
 
-import kotlin.random.Random
-
 fun main() {
     // Test coinFlip
 //    var heads = 0
