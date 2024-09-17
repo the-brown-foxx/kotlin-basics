@@ -12,7 +12,7 @@ Number of animals: [3]
 Animal 1 of 3:
 CAT or DOG: [CAT]
 Name: [Me-Mow]
-Memow meowed
+Me-Mow meowed
 
 Animal 2 of 3:
 CAT or DOG: [DOG]
@@ -22,7 +22,7 @@ Jake barked
 Animal 3 of 3:
 CAT or DOG: [DOG]
 Name: [Herb]
-Jericho barked
+Herb barked
 ```
 > **Note:** `[content]` in the example input-output denotes `content` as user input. The symbols `[]` should not appear in your actual program.
 
